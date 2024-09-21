@@ -1,0 +1,53 @@
+/* General styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Card styling */
+.card {
+    margin: 2rem 0;
+    border-radius: 20px;
+    overflow: hidden;
+    gap: 50px;
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.card:hover {
+    transform: scale(1.1); /* Slightly reduced scale for more visible effect */
+}
+
+.card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+@media (max-width: 767px) {
+    .navbar .nav-link {
+        font-size: 16px;
+    }
+
+    .card img {
+        height: 200px;
+    }
+
+    footer .contact-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .footer-columns {
+        flex-direction: column;
+        text-align: center;
+    }
+}

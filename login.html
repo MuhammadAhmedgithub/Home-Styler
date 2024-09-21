@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign Up</title>
+
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="icon">
+    
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+<body>
+    <div class="login-wrap">
+        <div class="login-html">
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+            <div class="login-form">
+                <div class="sign-in-htm">
+                    <form id="signInForm">
+                        <div class="group">
+                            <label for="signInUser" class="label">Username</label>
+                            <input id="signInUser" type="text" class="input" required>
+                        </div>
+                        <div class="group">
+                            <label for="signInPass" class="label">Password</label>
+                            <input id="signInPass" type="password" class="input" data-type="password" required>
+                        </div>
+                        <div class="group">
+                            <input id="check" type="checkbox" class="check" checked>
+                            <label for="check"><span class="icon"></span> Keep me Signed in</label>
+                        </div>
+                        <div class="group">
+                            <input type="submit" class="button" value="Sign In">
+                        </div>
+                    </form>
+                    <div class="hr"></div>
+                    <div class="foot-lnk">
+                        <a href="#forgot">Forgot Password?</a>
+                    </div>
+                </div>
+                <div class="sign-up-htm">
+                    <form id="signUpForm">
+                        <div class="group">
+                            <label for="signUpUser" class="label">Username</label>
+                            <input id="signUpUser" type="text" class="input" required>
+                        </div>
+                        <div class="group">
+                            <label for="signUpPass" class="label">Password</label>
+                            <input id="signUpPass" type="password" class="input" data-type="password" required>
+                        </div>
+                        <div class="group">
+                            <label for="signUpconfirmPass" class="label">Confirm Password</label>
+                            <input id="signUpconfirmPass" type="password" class="input" data-type="password" required>
+                        </div>
+                        <div class="group">
+                            <label for="signUpEmail" class="label">Email Address</label>
+                            <input id="signUpEmail" type="text" class="input" required>
+                        </div>
+                        <div class="group">
+                            <input type="submit" class="button" value="Sign Up">
+                        </div>
+                    </form>
+                    <div class="hr"></div>
+                    <div class="foot-lnk">
+                        <label for="tab-1">Already Member?</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
+

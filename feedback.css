@@ -1,0 +1,115 @@
+body{
+    background-image: url('https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?cs=srgb&dl=pexels-fotoaibe-1571460.jpg&fm=jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Ensures the background image stays in place while scrolling */
+    background-repeat: no-repeat;
+    height: 80vh; /* Make sure it covers the full height of the viewport */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.feedback-container {
+    background: rgba(40, 57, 101, .9);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    color: white;
+    margin-top: 25px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.star {
+    font-size: 30px;
+    cursor: pointer;
+    color: grey;
+}
+
+.star.selected {
+    color: gold;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Custom alert box */
+.alert-box {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.alert-box .message {
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    body {
+        background-size: cover; /* Ensures the image covers both width and height on smaller screens */
+        height: 100vh; /* Ensures the image covers the full viewport height */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Elements Search</title>
+    <link rel="stylesheet" href="filter.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Transform Your Interiors: Instant Search & Filter Options</h1>
+        <input type="text" id="search" placeholder="Search for design elements...">
+        
+        <label for="sort">Sort by:</label>
+        <select id="sort">
+            <option value="name">Name</option>
+            <option value="style">Style</option>
+            <option value="price">Price</option>
+        </select>
+
+        <label for="filterType">Filter by Type:</label>
+        <select id="filterType">
+            <option value="all">All</option>
+            <option value="furniture">Furniture</option>
+            <option value="lighting">Lighting</option>
+            <option value="decor">Decor</option>
+            <option value="kitchen">Kitchen</option>
+            <option value="bathroom">Bathroom</option>
+        </select>
+
+        <label for="styleFilter">Filter by Style:</label>
+        <select id="styleFilter">
+            <option value="all">All</option>
+            <option value="contemporary">Contemporary</option>
+            <option value="elegant">Elegant</option>
+            <option value="modern">Modern</option>
+        </select>
+
+        <label for="priceRange">Filter by Price Range:</label>
+        <input type="range" id="priceRange" min="350" max="1500" value="1500" step="50">
+        <span id="priceValue">$1500</span>
+
+        <ul id="itemList"></ul>
+    </div>
+  
+
+    <script src="filter.js"></script>
+</body>
+</html>
+
